@@ -1,0 +1,7 @@
+Credentials cache: API:5712:37
+        Principal: schapuis@42.FR
+
+  Issued                Expires               Principal
+Aug 12 14:07:17 2013  Aug 19 14:07:17 2013  krbtgt/42.FR@42.FR
+Aug 12 14:37:26 2013  Aug 19 14:07:17 2013  host/vogsphere-frontend-normal-1.42.fr@42.FR
+Aug 12 15:06:02 2013  Aug 19 14:07:17 2013  ldap/ldap-proxy.42.fr@42.FR

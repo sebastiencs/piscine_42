@@ -1,0 +1,4 @@
+dn: uid=schapuis,ou=2013,ou=people,dc=42,dc=fr
+changetype: modify
+add: mobile-phone
+mobile-phone: 0626865506

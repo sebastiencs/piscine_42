@@ -1,0 +1,74 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_split_whitespaces.c                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: schapuis <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2013/08/21 19:43:08 by schapuis          #+#    #+#             */
+/*   Updated: 2013/08/21 23:05:56 by schapuis         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+
+char	**ft_split_whitespaces(char *str)
+{
+	char	characters;
+	char	*string_base;
+	char	**string;
+	int		size_str;
+	int		i;
+	int		j;
+	int		k;
+
+	//printf("+");
+	string_base = &characters;
+	string = &string_base;
+	size_str = 0;
+	i = 0;
+	j = 0;
+	k = 0;
+	while (str[size_str])
+		size_str++;
+	*string = (char*)malloc(sizeof(char) * size_str);
+	string[0][0] = 'a';
+	/* while (i < size_str) */
+	/* { */
+	/* 	while (str[i] != ' ' && str[i] != '\0') */
+	/* 	{ */
+	/* 		string[j][k] = str[i]; */
+	/* 		i++; */
+	/* 		k++; */
+	/* 	} */
+	/* 	while (str[i] == ' ' && str[i] != '\0') */
+	/* 		i++; */
+	/* 	//j++; */
+	/* } */
+	return (string);
+}
+
+int	main()
+{
+	char	**tab;
+	char	tableau[] = "sebastien";
+	int		i;
+
+	tab = ft_split_whitespaces(tableau);
+	i = 0;
+	//printf("%c", tab[0][8]);
+	//ft_putchar(tab[0][4]);
+	//ft_putchar(tab[0][3]);
+	while (i < 8)
+	{
+		ft_putchar(tab[0][i]);
+		i++;
+	}
+	return 0;
+}
